@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Trello-mail.app-automator-script : An Apple Automator script that allows a hotkey to be used to create a card in Trello " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Trello-mail.app-automator-script</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pmhesse/Trello-Mail.app-Automator-Script">View on GitHub</a>
+
+          <h1 id="project_title">Trello-mail.app-automator-script</h1>
+          <h2 id="project_tagline">An Apple Automator script that allows a hotkey to be used to create a card in Trello </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pmhesse/Trello-Mail.app-Automator-Script/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pmhesse/Trello-Mail.app-Automator-Script/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="trello-mailapp-automator-script" class="anchor" href="#trello-mailapp-automator-script"><span class="octicon octicon-link"></span></a>Trello-Mail.app-Automator-Script</h1>
+
+<h1></h1>
+
+<p>An Apple Automator script that allows a hotkey to be used to create a card in Trello </p>
+
+<h3>
+<a name="create-your-automator-script" class="anchor" href="#create-your-automator-script"><span class="octicon octicon-link"></span></a>Create your automator script:</h3>
+
+<ul>
+<li>Run Automator</li>
+<li>Choose Service</li>
+<li>Service receives "no input" in "Mail"</li>
+<li>Drag "Run Applescript" to the workflow</li>
+<li>Replace   (* Your script goes here *) with the contents of the Applescript file</li>
+<li>Get an application key at <a href="https://trello.com/1/appKey/generate">https://trello.com/1/appKey/generate</a>
+</li>
+<li>Get a token at <a href="https://trello.com/1/authorize?key=**YOURKEY**&amp;name=**YOURAPP**&amp;expiration=never&amp;response_type=token&amp;scope=read,write">https://trello.com/1/authorize?key=**YOURKEY**&amp;name=**YOURAPP**&amp;expiration=never&amp;response_type=token&amp;scope=read,write</a>) - note it is a never expiring token so be careful</li>
+<li>Edit the Applescript accordingly with your application key and token.</li>
+<li>Save the service (⌘S) and give it a name.</li>
+</ul><h3>
+<a name="create-your-keyboard-shortcut" class="anchor" href="#create-your-keyboard-shortcut"><span class="octicon octicon-link"></span></a>Create your keyboard shortcut:</h3>
+
+<ul>
+<li>Run System Preferences -&gt; Keyboard -&gt; Keyboard Shortcuts</li>
+<li>Choose Application Shortcuts, hit the + button:</li>
+<li>* Application: Mail</li>
+<li>* Menu Title: The name of your Automator Service as seen in the Mail-&gt;Services menu</li>
+<li>* Keyboard Shortcut: Your choice, I use ⌘T </li>
+<li>* Click Add</li>
+</ul><p>All set!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Trello-mail.app-automator-script maintained by <a href="https://github.com/pmhesse">pmhesse</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
